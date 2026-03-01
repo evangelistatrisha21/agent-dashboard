@@ -3,99 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Account Dashboard</title>
+    <title>Agent Katrina - Casino Portal</title>
     <style>
         :root {
-            --bg-color: #0f172a;
-            --card-bg: #1e293b;
-            --accent: #38bdf8;
-            --text: #f1f5f9;
+            --primary: #ff0077;
+            --secondary: #2d0a31;
+            --bg: #1a051c;
+            --text: #ffffff;
+            --card-bg: rgba(255, 255, 255, 0.1);
         }
-
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            background-color: var(--bg-color);
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background: linear-gradient(180deg, var(--bg) 0%, #000000 100%);
             color: var(--text);
+            margin: 0;
             display: flex;
             flex-direction: column;
             align-items: center;
+            min-height: 100vh;
             padding: 20px;
-            margin: 0;
         }
-
-        .container {
-            width: 100%;
-            max-width: 500px;
-        }
-
-        h1 {
+        .profile-section {
             text-align: center;
-            color: var(--accent);
             margin-bottom: 30px;
         }
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 3px solid var(--primary);
+            object-fit: cover;
+            box-shadow: 0 0 15px var(--primary);
+        }
+        h1 { font-size: 1.4rem; margin: 10px 0 5px; color: var(--primary); }
+        p { font-size: 0.9rem; opacity: 0.8; margin: 0; }
 
+        .container { width: 100%; max-width: 400px; }
+        
         .link-card {
             background: var(--card-bg);
-            border-radius: 12px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
             padding: 15px;
-            margin-bottom: 15px;
-            text-decoration: none;
-            color: white;
+            margin-bottom: 12px;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            transition: transform 0.2s, border 0.2s;
-            border: 1px solid transparent;
+            text-decoration: none;
+            color: white;
+            transition: all 0.2s ease;
         }
-
-        .link-card:hover {
-            transform: translateY(-2px);
-            border-color: var(--accent);
-        }
-
-        .info h3 {
-            margin: 0;
-            font-size: 1.1rem;
-        }
-
-        .info p {
-            margin: 5px 0 0;
-            font-size: 0.8rem;
-            color: #94a3b8;
-        }
-
+        .link-card:active { transform: scale(0.96); background: rgba(255, 255, 255, 0.2); }
+        
+        .link-info { display: flex; flex-direction: column; }
+        .link-title { font-weight: bold; font-size: 0.95rem; }
+        .link-url { font-size: 0.7rem; color: #ff85ba; margin-top: 2px; }
+        
         .btn {
-            background: var(--accent);
-            color: #0f172a;
-            padding: 8px 16px;
-            border-radius: 6px;
+            background: var(--primary);
+            padding: 8px 15px;
+            border-radius: 8px;
             font-weight: bold;
-            font-size: 0.9rem;
+            font-size: 0.8rem;
+            text-transform: uppercase;
         }
     </style>
 </head>
 <body>
 
+    <div class="profile-section">
+        <img src="https://raw.githubusercontent.com/yourusername/your-repo-name/main/katrina.jpg" alt="Agent Katrina" class="profile-img">
+        <h1>Agent Katrina</h1>
+        <p>My Private Casino Links</p>
+    </div>
+
     <div class="container">
-        <h1>🎰 My Casino Links</h1>
-
-        <a href="https://casino-link-1.com" target="_blank" class="link-card">
-            <div class="info">
-                <h3>Casino Name One</h3>
-                <p>Username: Player777</p>
-            </div>
-            <div class="btn">Open</div>
+        <a href="https://d8obm.richempire88.life/register.html" class="link-card" target="_blank">
+            <div class="link-info"><span class="link-title">Richempire88</span><span class="link-url">d8obm.richempire88.life</span></div>
+            <div class="btn">Login</div>
         </a>
 
-        <a href="https://casino-link-2.com" target="_blank" class="link-card">
-            <div class="info">
-                <h3>Casino Name Two</h3>
-                <p>Username: HighRoller_X</p>
-            </div>
-            <div class="btn">Open</div>
+        <a href="https://katrina88.sjackpot.co/register.html" class="link-card" target="_blank">
+            <div class="link-info"><span class="link-title">SJackpot</span><span class="link-url">katrina88.sjackpot.co</span></div>
+            <div class="btn">Login</div>
         </a>
 
-        </div>
+        <a href="https://katrina88.starmax88s.com/register.html" class="link-card" target="_blank">
+            <div class="link-info"><span class="link-title">Starmax88s</span><span class="link-url">katrina88.starmax88s.com</span></div>
+            <div class="btn">Login</div>
+        </a>
+
+        <a href="https://o5mvb.74111105.com/register.html" class="link-card" target="_blank">
+            <div class="link-info"><span class="link-title">Portal 7411</span><span class="link-url">o5mvb.74111105.com</span></div>
+            <div class="btn">Login</div>
+        </a>
+
+        <a href="https://tlchi.60447444.com/register.html" class="link-card" target="_blank">
+            <div class="link-info"><span class="link-title">Portal 6044</span><span class="link-url">tlchi.60447444.com</span></div>
+            <div class="btn">Login</div>
+        </a>
+
+        <a href="https://dvdof.jdulti88.vip/register.html" class="link-card" target="_blank">
+            <div class="link-info"><span class="link-title">JDUlti88</span><span class="link-url">dvdof.jdulti88.vip</span></div>
+            <div class="btn">Login</div>
+        </a>
+
+        <a href="https://haawk.47675381.com/register.html" class="link-card" target="_blank">
+            <div class="link-info"><span class="link-title">Portal 4767</span><span class="link-url">haawk.47675381.com</span></div>
+            <div class="btn">Login</div>
+        </a>
+
+        <a href="https://kmm4i.563295rf88.com/register.html" class="link-card" target="_blank">
+            <div class="link-info"><span class="link-title">Portal 5632</span><span class="link-url">kmm4i.563295rf88.com</span></div>
+            <div class="btn">Login</div>
+        </a>
+    </div>
 
 </body>
 </html>
